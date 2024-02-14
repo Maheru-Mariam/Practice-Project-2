@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+   <link href="https://emoji-css.afeld.me/emoji.css" rel="stylesheet">
+
+   <link rel="stylesheet" href="about.html">
+</head>
+
+<body>
+    <section class="Sub-header">
+        <nav>
+
+           <!--  ---anchor tag so that we can click on the logo or links-- -->
+
+           <a href="index.html"><img src="eduford_img/logo.png" ></a>
+
+        <div class="nav-links" id="nav-links">
+
+           <!--  --onclick used for java here-- -->
+
+            <i class="fa fa-times" onclick="hideMenu()" ></i>
+
+            <ul>
+               <li><a href="index.html">HOME</a></li>    
+               <li><a href="about.html">ABOUT</a></li>    
+               <li><a href="course.html">COURSE</a></li>    
+               <li><a href="blog.html">BLOG</a></li>    
+               <li><a href="">CONTACT</a></li>    
+            </ul>
+        </div>
+
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+
+        </nav>
+       
+        <h1>Our Certificate & Online Programs For 2024</h1>
+    </section>
+
+
+
+<!-- ----- Blog Page Content ----- -->
+
+<section class="blog-content">
+
+    <div class="row">
+        <div class="blog-left">
+            <img src="eduford_img/certificate.jpg" >
+            <h2>Our Certificate & Online Programs For 2024</h2>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, rerum voluptas praesentium dignissimos veniam nostrum, temporibus cumque ea harum perferendis, vel numquam illo ex aut sapiente dolor totam debitis? Nihil!</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas qui id accusantium odio deleniti. Harum fugit consequatur error ducimus iusto molestias temporibus sapiente enim. Autem veritatis vitae non voluptas ut.</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis in, et dignissimos id quo beatae consequatur facere pariatur veniam eius cumque adipisci rerum aspernatur quaerat commodi consequuntur eligendi aut non.</p>
+            <br>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos ea quidem mollitia quibusdam, facere, sint aperiam distinctio esse reiciendis eligendi ullam omnis blanditiis earum est iure velit nemo quisquam voluptatum.</p>
+
+            <div class="comment-box">
+
+                <h3>Leave a comment</h3>
+
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your comment"></textarea>
+                    <button type="submit" >POST COMMENT</button>
+                </form>
+
+            </div>
+        </div>
+        <div class="blog-right">
+
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytical</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>23</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Autocad</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>34</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ----Footer---- -->
+
+
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio tenetur, laborum, ducimus fugiat ex debitis ipsum fuga quaerat iusto,<br> recusandae quasi incidunt culpa quis quae aut pariatur optio iste magni!</p>
+    <div class="icons">
+        <i class="fa-brands fa-square-facebook"></i>
+    </div>
+</section>
+
+
+   <!--  ---Javascript for Toggle Menu---
+ -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+
+      /*   --jokhon menu open korbo right value 0 hobe and vice versa-- */
+    </script>
+
+
+</body>
+</html>
